@@ -138,7 +138,7 @@ public class MaterialServiceImpl extends RootApis implements MaterialService {
             appTotalUseSpace = appTotalUseSpace.add(new BigDecimal(targetFile.length()));
             ossMaterialInfos.add(createTargetMaterial(ip, originalName, fileBinaryRequest.getMediaType(), ossApp, targetFile, fileBinaryResponse));
             //集群间同步
-            Sync.syncSalve(root, targetFile, fileBinaryResponse.getId());
+           // Sync.syncSalve(root, targetFile, fileBinaryResponse.getId());
             //更新数据库
             ossMaterialInfoSyncService.createSync(fileBinaryResponse.getId(), "Master");
         }
