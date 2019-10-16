@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.xiaominfo.oss</groupId>
+        <artifactId>oss-server-parent</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xiaominfo.oss</groupId>
+    <artifactId>oss-server-spring-boot-starter</artifactId>
+    <version>1.0</version>
+    <url>https://tes</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.7</java.version>
+        <oss-server-sdk.version>1.1</oss-server-sdk.version>
+        <spring-boot.version>2.0.2.RELEASE</spring-boot.version>
+        <!--maven version-->
+        <maven-bundle-plugin.version>3.3.0</maven-bundle-plugin.version>
+        <maven.compiler.version>3.7.0</maven.compiler.version>
+        <maven.source.version>2.2.1</maven.source.version>
+        <maven.gpg.version>1.6</maven.gpg.version>
+        <maven.surefire.version>2.19.1</maven.surefire.version>
+        <maven.javadoc.version>2.9.1</maven.javadoc.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.xiaominfo.oss</groupId>
+            <artifactId>oss-server-sdk-java</artifactId>
+            <version>${oss-server-sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven.source.version}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

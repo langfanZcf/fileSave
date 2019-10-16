@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaominfo.oss.module.dao.OSSStatisticDayMapper">
+
+
+    <select id="queryWeekCounts" resultType="java.util.Map" parameterType="java.util.Map">
+        SELECT
+            cur_date,
+            sum( files ) files
+        FROM
+            oss_statistic_day
+        WHERE
+            cur_date IN
+        <foreach collection="dates" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        GROUP BY
+            cur_date
+        ORDER BY
+            cur_date
+    </select>
+
+
+</mapper>

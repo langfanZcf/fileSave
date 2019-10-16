@@ -1,0 +1,37 @@
+{
+  "hints": [],
+  "properties": [
+    {
+      "sourceType": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties",
+      "description": "oss-server upload api address",
+      "name": "oss-server.endpoint",
+      "defaultValue": false,
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties",
+      "description": "oss-server application code.",
+      "name": "oss-server.application",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties",
+      "description": "Oss-server client appid.",
+      "name": "oss-server.appid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties",
+      "description": "oss-server client appsecret.",
+      "name": "oss-server.appsecret",
+      "type": "java.lang.String"
+    }
+  ],
+  "groups": [
+    {
+      "sourceType": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties",
+      "name": "oss-server",
+      "type": "com.xiaominfo.oss.spring.boot.starter.OSSServerProperties"
+    }
+  ]
+}

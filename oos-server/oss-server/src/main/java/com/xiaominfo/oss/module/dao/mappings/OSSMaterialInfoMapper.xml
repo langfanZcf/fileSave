@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaominfo.oss.module.dao.OSSMaterialInfoMapper">
+
+
+    <select id="selectMaterialUseSpace" resultType="java.lang.Integer">
+        SELECT sum(len) len from oss_material_info
+    </select>
+
+    <select id="queryCount" resultType="com.xiaominfo.oss.module.entity.OssMaterialCount"
+            parameterType="java.lang.String">
+        SELECT
+            user_id userId,
+            sum( len ) sumlen,
+            count( * ) files,
+            create_time curDate
+        FROM
+            oss_material_info t
+        WHERE
+            t.create_time >=#{start}
+            And  t.create_time &lt;= #{end}
+        GROUP BY
+            user_id,
+           create_time
+    </select>
+
+    <select id="queryByPage" resultType="com.xiaominfo.oss.module.entity.OSSMaterialInfoResult"
+            parameterType="java.util.Map">
+        SELECT
+            m.id,
+            m.original_name originalName,
+            m.store_path storePath,
+            m.url,
+            m.user_id userId,
+            m.type,
+            m.byte_str byteStr,
+            m.len,
+            m.create_time createTime,
+            m.last_modified_time lastModifiedTime,
+            m.app_id appId,
+            m.from_ip fromIp,
+            d.NAME,
+            app.NAME AS appname
+        FROM
+            oss_material_info  m
+            LEFT JOIN oss_app_info  app ON m.app_id = app.id
+            LEFT JOIN oss_developer  d ON app.dev_id = d.id
+        ORDER BY
+            m.create_time DESC
+    </select>
+
+    <select id="queryWaitSync" resultType="com.xiaominfo.oss.module.model.OSSMaterialInfo">
+        SELECT
+            m.id,
+            m.original_name originalName,
+            m.store_path storePath,
+            m.url,
+            m.user_id userId,
+            m.type,
+            m.byte_str byteStr,
+            m.len,
+            m.create_time createTime,
+            m.last_modified_time lastModifiedTime,
+            m.app_id appId,
+            m.from_ip fromIp
+        FROM
+            oss_material_info  m
+            inner join OSS_MATERIAL_INFO_SYNC c on c.material_id=m.id  and c.type='Master' and c.node = #{node,jdbcType=VARCHAR}
+        where m.id not in(select t.material_id from OSS_MATERIAL_INFO_SYNC t where t.node=#{thatNode,jdbcType=VARCHAR})
+    </select>
+</mapper>

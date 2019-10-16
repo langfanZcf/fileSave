@@ -1,0 +1,716 @@
+2019-10-16 14:18:21,168 INFO (StartupInfoLogger.java:50)- Starting OssServerApplication on DESKTOP-36NB36E with PID 21000 (F:\langfanIdea\oos-server\oss-server\target\classes started by Stig_Hardware in F:\langfanIdea\oos-server)
+2019-10-16 14:18:21,188 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-10-16 14:18:21,219 INFO (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2019-10-16 14:18:21,521 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Wed Oct 16 14:18:21 CST 2019]; root of context hierarchy
+2019-10-16 14:18:29,452 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 18000 (http)
+2019-10-16 14:18:29,879 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 8358 ms
+2019-10-16 14:18:30,128 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-16 14:18:30,129 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-16 14:18:30,130 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-16 14:18:30,131 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-16 14:18:30,131 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'corsFilter' to: [/*]
+2019-10-16 14:18:30,131 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'globalRequestMappingFilter' to: [/*]
+2019-10-16 14:18:30,131 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2019-10-16 14:18:30,497 DEBUG (MybatisStdOutImpl.java:49)- Logging initialized using 'class com.xiaominfo.oss.extend.mybatis.MybatisStdOutImpl' adapter.
+2019-10-16 14:18:30,571 DEBUG (MybatisStdOutImpl.java:49)- Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+2019-10-16 14:18:30,573 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSAppInfo matches criteria [is assignable to Object]
+2019-10-16 14:18:30,574 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSDeveloper matches criteria [is assignable to Object]
+2019-10-16 14:18:30,575 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSInformation matches criteria [is assignable to Object]
+2019-10-16 14:18:30,575 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfo matches criteria [is assignable to Object]
+2019-10-16 14:18:30,576 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfoSync matches criteria [is assignable to Object]
+2019-10-16 14:18:30,577 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSStatisticDay matches criteria [is assignable to Object]
+2019-10-16 14:18:30,578 DEBUG (MybatisStdOutImpl.java:49)- Scanned package: 'com.xiaominfo.oss.module.model' for aliases
+2019-10-16 14:18:30,579 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.PaginationInterceptor@4d8126f'
+2019-10-16 14:18:30,579 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor@5f404594'
+2019-10-16 14:18:34,550 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSMaterialInfoMapper.xml]'
+2019-10-16 14:18:34,631 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSStatisticDayMapper.xml]'
+2019-10-16 14:18:35,022 WARN (MybatisStdOutImpl.java:59)- Warn: Could not find @TableId in Class: com.xiaominfo.oss.module.model.OSSMaterialInfoSync.
+2019-10-16 14:18:35,642 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:18:36,102 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d48005: startup date [Wed Oct 16 14:18:21 CST 2019]; root of context hierarchy
+2019-10-16 14:18:36,195 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.delete(java.lang.String)
+2019-10-16 14:18:36,196 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.merge(com.xiaominfo.oss.module.model.OSSAppInfo)
+2019-10-16 14:18:36,197 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.queryById(java.lang.String)
+2019-10-16 14:18:36,197 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSAppInfo> com.xiaominfo.oss.api.AppInfoApplication.queryByPage(com.xiaominfo.oss.module.model.OSSAppInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:18:36,199 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.delete(java.lang.String)
+2019-10-16 14:18:36,200 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.merge(com.xiaominfo.oss.module.model.OSSDeveloper)
+2019-10-16 14:18:36,201 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.queryById(java.lang.String)
+2019-10-16 14:18:36,201 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSDeveloper> com.xiaominfo.oss.api.DeveloperApplication.queryByPage(com.xiaominfo.oss.module.model.OSSDeveloper,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:18:36,202 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.index()
+2019-10-16 14:18:36,203 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/exit],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.exit(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:18:36,203 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.IndexApplication.loginValidate(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:18:36,204 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.login()
+2019-10-16 14:18:36,206 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/createDir],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.createDirectory(java.lang.String,java.lang.String)
+2019-10-16 14:18:36,207 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadMaterialNonProUrl],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterialNonProUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:18:36,208 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.entity.OSSMaterialInfoResult> com.xiaominfo.oss.api.MaterialApplication.queryByPage(com.xiaominfo.oss.module.model.OSSMaterialInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:18:36,208 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/exportExcel],methods=[GET]}" onto public void com.xiaominfo.oss.api.MaterialApplication.exportExcel(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:18:36,208 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/{project}/uploadMaterial],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterial(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:18:36,209 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadByBinary],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.upload(org.springframework.http.HttpEntity<java.lang.String>)
+2019-10-16 14:18:36,210 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadBySys],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadSys(java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:18:36,211 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/information],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.information(org.springframework.ui.Model)
+2019-10-16 14:18:36,212 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/dashboard],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.dashboard(org.springframework.ui.Model)
+2019-10-16 14:18:36,212 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/appinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.appinfo(org.springframework.ui.Model)
+2019-10-16 14:18:36,212 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/materialinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.materialInfo(org.springframework.ui.Model)
+2019-10-16 14:18:36,213 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.developer()
+2019-10-16 14:18:36,215 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.OSSApplication.index(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:18:36,215 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/toogleView],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.OSSApplication.toggleView(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:18:36,217 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/sys/mergeInformation],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.SystemApplication.mergeInformation(com.xiaominfo.oss.module.model.OSSInformation)
+2019-10-16 14:18:36,220 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:18:36,220 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:18:36,458 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:18:36,458 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:18:36,506 INFO (ExceptionHandlerExceptionResolver.java:288)- Detected @ExceptionHandler methods in globalExceptionHandler
+2019-10-16 14:18:36,582 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-10-16 14:18:36,834 INFO (FreeMarkerConfigurer.java:131)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-16 14:18:37,210 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 18000 (http) with context path ''
+2019-10-16 14:18:37,222 INFO (StartupInfoLogger.java:59)- Started OssServerApplication in 20.148 seconds (JVM running for 26.754)
+2019-10-16 14:18:37,382 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:37,389 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b545206] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:37,457 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:37,464 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,cur_date AS curDate,modified_time AS modifiedTime,use_spaces AS useSpaces,files FROM oss_statistic_day WHERE (cur_date BETWEEN ? AND ?) 
+2019-10-16 14:18:37,497 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:18:37,756 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:18:37,758 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b545206]
+2019-10-16 14:18:37,770 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:37,771 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e7c77f] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:37,773 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:37,774 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT user_id userId, sum( len ) sumlen, count( * ) files, create_time curDate FROM oss_material_info t WHERE t.create_time >=? And t.create_time <= ? GROUP BY user_id, create_time 
+2019-10-16 14:18:37,774 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:18:38,199 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:18:38,200 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e7c77f]
+2019-10-16 14:18:38,228 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:38,228 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6192a5d5]
+2019-10-16 14:18:38,230 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will be managed by Spring
+2019-10-16 14:18:38,231 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 14:18:38,232 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:18:38,240 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:18:38,241 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6192a5d5]
+2019-10-16 14:18:38,241 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6192a5d5]
+2019-10-16 14:18:38,241 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6192a5d5]
+2019-10-16 14:18:38,242 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6192a5d5]
+2019-10-16 14:18:38,247 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:38,247 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b7a52dd] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:39,799 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:39,800 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:39,802 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2036e315faf8407789e53923cbbfbfd7(String), 2019-10-16 14:18:38(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-08(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,084 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,084 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b7a52dd]
+2019-10-16 14:18:40,084 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,085 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6535117e] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,085 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,086 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,087 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: adfe9d65e3cd4ca29c3e3c5434ac0ed4(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-09(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,226 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,228 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6535117e]
+2019-10-16 14:18:40,228 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,228 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa13e6] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,229 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,229 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,231 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 4a0715a7532c4c4caabcb818474c5dc3(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-10(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,406 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,406 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa13e6]
+2019-10-16 14:18:40,406 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,406 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f88bfbe] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,407 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,408 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,409 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 287db489cc1e4db8b70eed53832c04d7(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-11(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,559 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,560 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f88bfbe]
+2019-10-16 14:18:40,560 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,560 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8ab698] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,561 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,562 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,563 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: f2342338ec894094ab59305b226e6fa1(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-12(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,761 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,761 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8ab698]
+2019-10-16 14:18:40,762 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,762 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@446626a7] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,763 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,764 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,764 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: f9c2bd3dff2e406f93740c40dd820ed9(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-13(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,869 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,869 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@446626a7]
+2019-10-16 14:18:40,870 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,870 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cf0cacc] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,870 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,871 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,871 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 9cd11bce2e9b470ca11c7fd92ac55029(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-14(String), 0(Long), 0(Integer)
+2019-10-16 14:18:40,982 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:40,983 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cf0cacc]
+2019-10-16 14:18:40,983 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:18:40,984 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@529c2a9a] was not registered for synchronization because synchronization is not active
+2019-10-16 14:18:40,985 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6cbd0674] will not be managed by Spring
+2019-10-16 14:18:40,986 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: INSERT INTO oss_statistic_day ( id, create_time, user_id, cur_date, use_spaces, files ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2019-10-16 14:18:40,987 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: c233b7b7d824418a8baea69d86486939(String), 2019-10-16 14:18:40(String), 9b6fc83ba49a449d87860fad467a5096(String), 2019-10-15(String), 0(Long), 0(Integer)
+2019-10-16 14:18:41,046 DEBUG (MybatisStdOutImpl.java:49)- <==    Updates: 1
+2019-10-16 14:18:41,046 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@529c2a9a]
+2019-10-16 14:18:41,049 INFO (OssServerApplication.java:31)- 
+--------------------------------------------------------------------------------------------------------------------
+	Application 'OSS Server Application v1.0' is running! Access URLs:
+	Local: 		http://localhost:18000
+	External: 	http://192.168.56.1:18000
+--------------------------------------------------------------------------------------------------------------------
+2019-10-16 14:18:46,238 INFO (MasterServer.java:34)- 集群同步端口已经启动. port = [18001]
+2019-10-16 14:20:15,728 INFO (StartupInfoLogger.java:50)- Starting OssServerApplication on DESKTOP-36NB36E with PID 17624 (F:\langfanIdea\oos-server\oss-server\target\classes started by Stig_Hardware in F:\langfanIdea\oos-server)
+2019-10-16 14:20:15,731 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-10-16 14:20:15,733 INFO (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2019-10-16 14:20:15,805 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c7b252e: startup date [Wed Oct 16 14:20:15 CST 2019]; root of context hierarchy
+2019-10-16 14:20:18,324 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 18000 (http)
+2019-10-16 14:20:18,458 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 2653 ms
+2019-10-16 14:20:18,633 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-16 14:20:18,634 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-16 14:20:18,635 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-16 14:20:18,635 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-16 14:20:18,635 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'corsFilter' to: [/*]
+2019-10-16 14:20:18,636 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'globalRequestMappingFilter' to: [/*]
+2019-10-16 14:20:18,636 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2019-10-16 14:20:18,766 DEBUG (MybatisStdOutImpl.java:49)- Logging initialized using 'class com.xiaominfo.oss.extend.mybatis.MybatisStdOutImpl' adapter.
+2019-10-16 14:20:18,797 DEBUG (MybatisStdOutImpl.java:49)- Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+2019-10-16 14:20:18,799 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSAppInfo matches criteria [is assignable to Object]
+2019-10-16 14:20:18,800 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSDeveloper matches criteria [is assignable to Object]
+2019-10-16 14:20:18,801 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSInformation matches criteria [is assignable to Object]
+2019-10-16 14:20:18,801 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfo matches criteria [is assignable to Object]
+2019-10-16 14:20:18,802 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfoSync matches criteria [is assignable to Object]
+2019-10-16 14:20:18,803 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSStatisticDay matches criteria [is assignable to Object]
+2019-10-16 14:20:18,804 DEBUG (MybatisStdOutImpl.java:49)- Scanned package: 'com.xiaominfo.oss.module.model' for aliases
+2019-10-16 14:20:18,805 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.PaginationInterceptor@72fe8a4f'
+2019-10-16 14:20:18,805 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor@2227a6c1'
+2019-10-16 14:20:20,841 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSMaterialInfoMapper.xml]'
+2019-10-16 14:20:20,880 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSStatisticDayMapper.xml]'
+2019-10-16 14:20:21,050 WARN (MybatisStdOutImpl.java:59)- Warn: Could not find @TableId in Class: com.xiaominfo.oss.module.model.OSSMaterialInfoSync.
+2019-10-16 14:20:21,265 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:20:21,583 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c7b252e: startup date [Wed Oct 16 14:20:15 CST 2019]; root of context hierarchy
+2019-10-16 14:20:21,640 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.delete(java.lang.String)
+2019-10-16 14:20:21,641 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.merge(com.xiaominfo.oss.module.model.OSSAppInfo)
+2019-10-16 14:20:21,641 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.queryById(java.lang.String)
+2019-10-16 14:20:21,643 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSAppInfo> com.xiaominfo.oss.api.AppInfoApplication.queryByPage(com.xiaominfo.oss.module.model.OSSAppInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:20:21,643 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.delete(java.lang.String)
+2019-10-16 14:20:21,645 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.merge(com.xiaominfo.oss.module.model.OSSDeveloper)
+2019-10-16 14:20:21,645 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.queryById(java.lang.String)
+2019-10-16 14:20:21,645 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSDeveloper> com.xiaominfo.oss.api.DeveloperApplication.queryByPage(com.xiaominfo.oss.module.model.OSSDeveloper,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:20:21,647 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.index()
+2019-10-16 14:20:21,647 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/exit],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.exit(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:20:21,647 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.login()
+2019-10-16 14:20:21,647 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.IndexApplication.loginValidate(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:20:21,649 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/createDir],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.createDirectory(java.lang.String,java.lang.String)
+2019-10-16 14:20:21,649 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.entity.OSSMaterialInfoResult> com.xiaominfo.oss.api.MaterialApplication.queryByPage(com.xiaominfo.oss.module.model.OSSMaterialInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:20:21,650 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadByBinary],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.upload(org.springframework.http.HttpEntity<java.lang.String>)
+2019-10-16 14:20:21,651 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/{project}/uploadMaterial],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterial(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:20:21,651 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/exportExcel],methods=[GET]}" onto public void com.xiaominfo.oss.api.MaterialApplication.exportExcel(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:20:21,651 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadBySys],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadSys(java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:20:21,651 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadMaterialNonProUrl],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterialNonProUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:20:21,653 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/information],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.information(org.springframework.ui.Model)
+2019-10-16 14:20:21,653 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/appinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.appinfo(org.springframework.ui.Model)
+2019-10-16 14:20:21,655 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.developer()
+2019-10-16 14:20:21,655 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/materialinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.materialInfo(org.springframework.ui.Model)
+2019-10-16 14:20:21,655 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/dashboard],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.dashboard(org.springframework.ui.Model)
+2019-10-16 14:20:21,656 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.OSSApplication.index(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:20:21,656 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/toogleView],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.OSSApplication.toggleView(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:20:21,656 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/sys/mergeInformation],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.SystemApplication.mergeInformation(com.xiaominfo.oss.module.model.OSSInformation)
+2019-10-16 14:20:21,658 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:20:21,659 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:20:21,691 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:20:21,691 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:20:21,706 INFO (ExceptionHandlerExceptionResolver.java:288)- Detected @ExceptionHandler methods in globalExceptionHandler
+2019-10-16 14:20:21,761 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-10-16 14:20:21,889 INFO (FreeMarkerConfigurer.java:131)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-16 14:20:22,110 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 18000 (http) with context path ''
+2019-10-16 14:20:22,115 INFO (StartupInfoLogger.java:59)- Started OssServerApplication in 7.313 seconds (JVM running for 10.037)
+2019-10-16 14:20:22,162 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:22,168 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2da3b078] was not registered for synchronization because synchronization is not active
+2019-10-16 14:20:22,202 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will not be managed by Spring
+2019-10-16 14:20:22,208 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,cur_date AS curDate,modified_time AS modifiedTime,use_spaces AS useSpaces,files FROM oss_statistic_day WHERE (cur_date BETWEEN ? AND ?) 
+2019-10-16 14:20:22,226 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:20:22,287 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 8
+2019-10-16 14:20:22,288 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2da3b078]
+2019-10-16 14:20:22,292 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:22,292 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c78e551] was not registered for synchronization because synchronization is not active
+2019-10-16 14:20:22,292 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will not be managed by Spring
+2019-10-16 14:20:22,292 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT user_id userId, sum( len ) sumlen, count( * ) files, create_time curDate FROM oss_material_info t WHERE t.create_time >=? And t.create_time <= ? GROUP BY user_id, create_time 
+2019-10-16 14:20:22,293 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:20:22,294 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:20:22,295 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c78e551]
+2019-10-16 14:20:22,305 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:22,306 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d87335]
+2019-10-16 14:20:22,308 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:22,309 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 14:20:22,309 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:22,313 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:22,314 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d87335]
+2019-10-16 14:20:22,315 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d87335]
+2019-10-16 14:20:22,315 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d87335]
+2019-10-16 14:20:22,315 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20d87335]
+2019-10-16 14:20:22,321 INFO (OssServerApplication.java:31)- 
+--------------------------------------------------------------------------------------------------------------------
+	Application 'OSS Server Application v1.0' is running! Access URLs:
+	Local: 		http://localhost:18000
+	External: 	http://192.168.56.1:18000
+--------------------------------------------------------------------------------------------------------------------
+2019-10-16 14:20:25,535 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-16 14:20:25,584 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2019-10-16 14:20:26,792 INFO (MasterServer.java:34)- 集群同步端口已经启动. port = [18001]
+2019-10-16 14:20:32,744 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,744 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56a11ee4]
+2019-10-16 14:20:32,745 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:32,747 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 14:20:32,748 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:32,752 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:32,753 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56a11ee4]
+2019-10-16 14:20:32,753 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56a11ee4]
+2019-10-16 14:20:32,754 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56a11ee4]
+2019-10-16 14:20:32,755 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56a11ee4]
+2019-10-16 14:20:32,766 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,767 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28885dca] was not registered for synchronization because synchronization is not active
+2019-10-16 14:20:32,767 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will not be managed by Spring
+2019-10-16 14:20:32,769 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_app_info 
+2019-10-16 14:20:32,770 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:32,922 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:32,923 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28885dca]
+2019-10-16 14:20:32,926 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,926 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d189399] was not registered for synchronization because synchronization is not active
+2019-10-16 14:20:32,927 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will not be managed by Spring
+2019-10-16 14:20:32,929 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_developer 
+2019-10-16 14:20:32,929 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:32,934 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:32,935 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d189399]
+2019-10-16 14:20:32,942 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,943 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1542a763] was not registered for synchronization because synchronization is not active
+2019-10-16 14:20:32,944 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will not be managed by Spring
+2019-10-16 14:20:32,946 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_material_info 
+2019-10-16 14:20:32,946 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:32,948 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:32,949 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1542a763]
+2019-10-16 14:20:32,953 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,954 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53aedb3c]
+2019-10-16 14:20:32,954 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:32,955 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT sum(len) len from oss_material_info 
+2019-10-16 14:20:32,956 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:32,959 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:20:32,960 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53aedb3c]
+2019-10-16 14:20:32,961 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53aedb3c]
+2019-10-16 14:20:32,962 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53aedb3c]
+2019-10-16 14:20:32,962 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53aedb3c]
+2019-10-16 14:20:32,967 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:32,968 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75cd97ed]
+2019-10-16 14:20:32,971 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:32,972 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT cur_date, sum( files ) files FROM oss_statistic_day WHERE cur_date IN ( ? , ? , ? , ? , ? , ? , ? , ? ) GROUP BY cur_date ORDER BY cur_date 
+2019-10-16 14:20:32,973 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-09(String), 2019-10-10(String), 2019-10-11(String), 2019-10-12(String), 2019-10-13(String), 2019-10-14(String), 2019-10-15(String)
+2019-10-16 14:20:33,052 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 8
+2019-10-16 14:20:33,052 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75cd97ed]
+2019-10-16 14:20:33,053 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75cd97ed]
+2019-10-16 14:20:33,054 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75cd97ed]
+2019-10-16 14:20:33,054 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75cd97ed]
+2019-10-16 14:20:34,154 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:34,154 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a0dc111]
+2019-10-16 14:20:34,155 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:34,156 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:20:34,156 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:34,158 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:20:34,160 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a0dc111]
+2019-10-16 14:20:34,160 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a0dc111]
+2019-10-16 14:20:34,160 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a0dc111]
+2019-10-16 14:20:34,160 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a0dc111]
+2019-10-16 14:20:36,835 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 14:20:36,840 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:36,840 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cd899f2]
+2019-10-16 14:20:36,841 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:36,842 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:20:36,843 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:36,845 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:20:36,846 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cd899f2]
+2019-10-16 14:20:36,846 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cd899f2]
+2019-10-16 14:20:36,846 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cd899f2]
+2019-10-16 14:20:36,846 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cd899f2]
+2019-10-16 14:20:36,848 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:20:38,664 INFO (OSSApplication.java:58)- dir:/lall
+2019-10-16 14:20:38,665 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:20:38,666 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1855ba41]
+2019-10-16 14:20:38,666 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:20:38,666 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:20:38,667 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:20:38,670 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:20:38,671 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1855ba41]
+2019-10-16 14:20:38,671 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1855ba41]
+2019-10-16 14:20:38,672 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1855ba41]
+2019-10-16 14:20:38,672 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1855ba41]
+2019-10-16 14:20:38,674 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:20:38,674 INFO (OSSApplication.java:159)- url:http://192.168.51.1/lall/419b4dcc1f884ae58d382bf282f0d66c.jpg
+2019-10-16 14:22:28,026 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 14:22:28,036 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:28,037 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4d40e8]
+2019-10-16 14:22:28,037 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:28,038 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:28,039 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:28,041 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:28,042 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4d40e8]
+2019-10-16 14:22:28,043 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4d40e8]
+2019-10-16 14:22:28,043 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4d40e8]
+2019-10-16 14:22:28,043 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4d40e8]
+2019-10-16 14:22:28,045 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:22:29,059 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:29,060 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,060 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:29,061 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_material_info 
+2019-10-16 14:22:29,062 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:29,064 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:29,065 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,066 DEBUG (MybatisStdOutImpl.java:49)- Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6] from current transaction
+2019-10-16 14:22:29,067 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT m.id, m.original_name originalName, m.store_path storePath, m.url, m.user_id userId, m.type, m.byte_str byteStr, m.len, m.create_time createTime, m.last_modified_time lastModifiedTime, m.app_id appId, m.from_ip fromIp, d.NAME, app.NAME AS appname FROM oss_material_info m LEFT JOIN oss_app_info app ON m.app_id = app.id LEFT JOIN oss_developer d ON app.dev_id = d.id ORDER BY m.create_time DESC 
+2019-10-16 14:22:29,069 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:29,109 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:29,110 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,110 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,110 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,110 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1670d0b6]
+2019-10-16 14:22:29,982 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 14:22:29,983 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:29,984 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737a0e3a]
+2019-10-16 14:22:29,985 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:29,986 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:29,987 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:29,989 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:29,990 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737a0e3a]
+2019-10-16 14:22:29,991 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737a0e3a]
+2019-10-16 14:22:29,991 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737a0e3a]
+2019-10-16 14:22:29,991 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@737a0e3a]
+2019-10-16 14:22:29,992 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:22:34,336 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:34,336 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:34,337 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:34,338 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_developer 
+2019-10-16 14:22:34,338 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:34,341 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:34,341 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:34,342 DEBUG (MybatisStdOutImpl.java:49)- Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f] from current transaction
+2019-10-16 14:22:34,378 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer LIMIT 0,10 
+2019-10-16 14:22:34,378 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:34,389 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:34,389 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:34,390 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:34,390 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:34,391 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1aea2b5f]
+2019-10-16 14:22:35,825 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:35,825 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6158cc9a]
+2019-10-16 14:22:35,826 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:35,826 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 14:22:35,827 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:35,828 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:35,830 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6158cc9a]
+2019-10-16 14:22:35,830 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6158cc9a]
+2019-10-16 14:22:35,831 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6158cc9a]
+2019-10-16 14:22:35,831 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6158cc9a]
+2019-10-16 14:22:35,949 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:35,949 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:35,950 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:35,951 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_app_info 
+2019-10-16 14:22:35,952 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:35,959 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:35,961 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:35,961 DEBUG (MybatisStdOutImpl.java:49)- Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9] from current transaction
+2019-10-16 14:22:35,963 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,code,intro,dev_id AS devId,create_time AS createTime,use_space AS useSpace,use_space_str AS useSpaceStr FROM oss_app_info LIMIT 0,10 
+2019-10-16 14:22:35,964 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:35,966 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:22:35,967 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:35,967 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:35,968 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:35,968 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb699c9]
+2019-10-16 14:22:39,223 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 14:22:39,224 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:39,225 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5112a3f9]
+2019-10-16 14:22:39,225 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:39,226 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:39,227 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:39,228 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:39,229 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5112a3f9]
+2019-10-16 14:22:39,230 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5112a3f9]
+2019-10-16 14:22:39,230 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5112a3f9]
+2019-10-16 14:22:39,230 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5112a3f9]
+2019-10-16 14:22:39,232 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:22:49,891 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:49,891 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44cd0bff]
+2019-10-16 14:22:49,892 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:49,894 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:49,894 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:49,895 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:49,896 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44cd0bff]
+2019-10-16 14:22:49,896 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44cd0bff]
+2019-10-16 14:22:49,897 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44cd0bff]
+2019-10-16 14:22:49,897 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44cd0bff]
+2019-10-16 14:22:51,112 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 14:22:51,113 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:51,114 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae71dc9]
+2019-10-16 14:22:51,115 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:51,116 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:51,116 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:51,118 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:51,118 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae71dc9]
+2019-10-16 14:22:51,119 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae71dc9]
+2019-10-16 14:22:51,119 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae71dc9]
+2019-10-16 14:22:51,120 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae71dc9]
+2019-10-16 14:22:51,122 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:22:51,882 INFO (OSSApplication.java:58)- dir:/lang1
+2019-10-16 14:22:51,884 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:22:51,884 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de93c8]
+2019-10-16 14:22:51,885 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:22:51,886 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:22:51,886 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:22:51,888 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:22:51,889 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de93c8]
+2019-10-16 14:22:51,889 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de93c8]
+2019-10-16 14:22:51,890 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de93c8]
+2019-10-16 14:22:51,890 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de93c8]
+2019-10-16 14:22:51,892 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:23:35,449 INFO (OSSApplication.java:58)- dir:/lall
+2019-10-16 14:23:35,451 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:23:35,452 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e26732]
+2019-10-16 14:23:35,452 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4364712f] will be managed by Spring
+2019-10-16 14:23:35,453 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 14:23:35,454 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:23:35,455 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:23:35,455 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e26732]
+2019-10-16 14:23:35,456 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e26732]
+2019-10-16 14:23:35,456 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e26732]
+2019-10-16 14:23:35,456 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e26732]
+2019-10-16 14:23:35,457 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 14:23:35,458 INFO (OSSApplication.java:159)- url:http://192.168.51.1/lall/419b4dcc1f884ae58d382bf282f0d66c.jpg
+2019-10-16 14:39:00,616 INFO (StartupInfoLogger.java:50)- Starting OssServerApplication on DESKTOP-36NB36E with PID 9388 (F:\langfanIdea\oos-server\oss-server\target\classes started by Stig_Hardware in F:\langfanIdea\oos-server)
+2019-10-16 14:39:00,695 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-10-16 14:39:00,816 INFO (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2019-10-16 14:39:00,987 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aeb35e6: startup date [Wed Oct 16 14:39:00 CST 2019]; root of context hierarchy
+2019-10-16 14:39:04,757 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 18000 (http)
+2019-10-16 14:39:05,102 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 4115 ms
+2019-10-16 14:39:05,540 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-16 14:39:05,541 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-16 14:39:05,542 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-16 14:39:05,542 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-16 14:39:05,543 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'corsFilter' to: [/*]
+2019-10-16 14:39:05,546 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'globalRequestMappingFilter' to: [/*]
+2019-10-16 14:39:05,547 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2019-10-16 14:39:06,029 DEBUG (MybatisStdOutImpl.java:49)- Logging initialized using 'class com.xiaominfo.oss.extend.mybatis.MybatisStdOutImpl' adapter.
+2019-10-16 14:39:06,273 DEBUG (MybatisStdOutImpl.java:49)- Using VFS adapter com.baomidou.mybatisplus.spring.boot.starter.SpringBootVFS
+2019-10-16 14:39:06,277 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSAppInfo matches criteria [is assignable to Object]
+2019-10-16 14:39:06,277 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSDeveloper matches criteria [is assignable to Object]
+2019-10-16 14:39:06,278 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSInformation matches criteria [is assignable to Object]
+2019-10-16 14:39:06,280 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfo matches criteria [is assignable to Object]
+2019-10-16 14:39:06,281 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSMaterialInfoSync matches criteria [is assignable to Object]
+2019-10-16 14:39:06,283 DEBUG (MybatisStdOutImpl.java:49)- Checking to see if class com.xiaominfo.oss.module.model.OSSStatisticDay matches criteria [is assignable to Object]
+2019-10-16 14:39:06,314 DEBUG (MybatisStdOutImpl.java:49)- Scanned package: 'com.xiaominfo.oss.module.model' for aliases
+2019-10-16 14:39:06,316 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.PaginationInterceptor@765df79d'
+2019-10-16 14:39:06,318 DEBUG (MybatisStdOutImpl.java:49)- Registered plugin: 'com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor@27fde870'
+2019-10-16 14:39:09,471 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSMaterialInfoMapper.xml]'
+2019-10-16 14:39:09,526 DEBUG (MybatisStdOutImpl.java:49)- Parsed mapper file: 'file [F:\langfanIdea\oos-server\oss-server\target\classes\com\xiaominfo\oss\module\dao\mappings\OSSStatisticDayMapper.xml]'
+2019-10-16 14:39:09,769 WARN (MybatisStdOutImpl.java:59)- Warn: Could not find @TableId in Class: com.xiaominfo.oss.module.model.OSSMaterialInfoSync.
+2019-10-16 14:39:10,119 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:39:10,344 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6aeb35e6: startup date [Wed Oct 16 14:39:00 CST 2019]; root of context hierarchy
+2019-10-16 14:39:10,401 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.delete(java.lang.String)
+2019-10-16 14:39:10,402 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.merge(com.xiaominfo.oss.module.model.OSSAppInfo)
+2019-10-16 14:39:10,402 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSAppInfo> com.xiaominfo.oss.api.AppInfoApplication.queryByPage(com.xiaominfo.oss.module.model.OSSAppInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:39:10,402 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/app/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.AppInfoApplication.queryById(java.lang.String)
+2019-10-16 14:39:10,405 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/delete],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.delete(java.lang.String)
+2019-10-16 14:39:10,405 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/merge],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.merge(com.xiaominfo.oss.module.model.OSSDeveloper)
+2019-10-16 14:39:10,405 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.model.OSSDeveloper> com.xiaominfo.oss.api.DeveloperApplication.queryByPage(com.xiaominfo.oss.module.model.OSSDeveloper,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:39:10,405 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer/queryById],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.DeveloperApplication.queryById(java.lang.String)
+2019-10-16 14:39:10,406 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.index()
+2019-10-16 14:39:10,407 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/exit],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.exit(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:39:10,407 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.IndexApplication.login()
+2019-10-16 14:39:10,409 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.IndexApplication.loginValidate(java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:39:10,410 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/createDir],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.createDirectory(java.lang.String,java.lang.String)
+2019-10-16 14:39:10,410 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadMaterialNonProUrl],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterialNonProUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:39:10,411 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/queryByPage],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.Pagination<com.xiaominfo.oss.module.entity.OSSMaterialInfoResult> com.xiaominfo.oss.api.MaterialApplication.queryByPage(com.xiaominfo.oss.module.model.OSSMaterialInfo,java.lang.Integer,java.lang.Integer)
+2019-10-16 14:39:10,411 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/exportExcel],methods=[GET]}" onto public void com.xiaominfo.oss.api.MaterialApplication.exportExcel(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:39:10,411 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadBySys],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadSys(java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:39:10,412 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/{project}/uploadMaterial],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.uploadMaterial(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[])
+2019-10-16 14:39:10,413 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/material/uploadByBinary],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.MaterialApplication.upload(org.springframework.http.HttpEntity<java.lang.String>)
+2019-10-16 14:39:10,415 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/information],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.information(org.springframework.ui.Model)
+2019-10-16 14:39:10,416 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/appinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.appinfo(org.springframework.ui.Model)
+2019-10-16 14:39:10,416 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/materialinfo],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.materialInfo(org.springframework.ui.Model)
+2019-10-16 14:39:10,416 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/dashboard],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.dashboard(org.springframework.ui.Model)
+2019-10-16 14:39:10,417 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/developer],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.ModelApplication.developer()
+2019-10-16 14:39:10,418 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/],methods=[GET]}" onto public java.lang.String com.xiaominfo.oss.api.OSSApplication.index(org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:39:10,418 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/list/toogleView],methods=[GET]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.OSSApplication.toggleView(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-16 14:39:10,420 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/oss/sys/mergeInformation],methods=[POST]}" onto public com.xiaominfo.oss.common.pojo.RestfulMessage com.xiaominfo.oss.api.SystemApplication.mergeInformation(com.xiaominfo.oss.module.model.OSSInformation)
+2019-10-16 14:39:10,421 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-16 14:39:10,423 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-16 14:39:10,454 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:39:10,454 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-16 14:39:10,471 INFO (ExceptionHandlerExceptionResolver.java:288)- Detected @ExceptionHandler methods in globalExceptionHandler
+2019-10-16 14:39:10,523 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2019-10-16 14:39:10,658 INFO (FreeMarkerConfigurer.java:131)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-16 14:39:10,866 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 18000 (http) with context path ''
+2019-10-16 14:39:10,869 INFO (StartupInfoLogger.java:59)- Started OssServerApplication in 11.193 seconds (JVM running for 15.575)
+2019-10-16 14:39:10,911 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:39:10,918 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@512d6e60] was not registered for synchronization because synchronization is not active
+2019-10-16 14:39:10,955 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will not be managed by Spring
+2019-10-16 14:39:10,960 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,create_time AS createTime,user_id AS userId,cur_date AS curDate,modified_time AS modifiedTime,use_spaces AS useSpaces,files FROM oss_statistic_day WHERE (cur_date BETWEEN ? AND ?) 
+2019-10-16 14:39:10,984 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:39:10,999 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 8
+2019-10-16 14:39:11,000 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@512d6e60]
+2019-10-16 14:39:11,003 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:39:11,003 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bab5898] was not registered for synchronization because synchronization is not active
+2019-10-16 14:39:11,004 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will not be managed by Spring
+2019-10-16 14:39:11,005 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT user_id userId, sum( len ) sumlen, count( * ) files, create_time curDate FROM oss_material_info t WHERE t.create_time >=? And t.create_time <= ? GROUP BY user_id, create_time 
+2019-10-16 14:39:11,005 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-15(String)
+2019-10-16 14:39:11,007 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 14:39:11,008 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bab5898]
+2019-10-16 14:39:11,018 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 14:39:11,019 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1ef916]
+2019-10-16 14:39:11,021 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 14:39:11,022 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 14:39:11,023 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 14:39:11,029 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 14:39:11,030 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1ef916]
+2019-10-16 14:39:11,031 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1ef916]
+2019-10-16 14:39:11,031 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1ef916]
+2019-10-16 14:39:11,031 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1ef916]
+2019-10-16 14:39:11,039 INFO (OssServerApplication.java:31)- 
+--------------------------------------------------------------------------------------------------------------------
+	Application 'OSS Server Application v1.0' is running! Access URLs:
+	Local: 		http://localhost:18000
+	External: 	http://192.168.56.1:18000
+--------------------------------------------------------------------------------------------------------------------
+2019-10-16 14:39:14,914 INFO (MasterServer.java:34)- 集群同步端口已经启动. port = [18001]
+2019-10-16 15:00:09,156 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-16 15:00:09,193 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2019-10-16 15:00:16,304 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,304 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f287f77]
+2019-10-16 15:00:16,305 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:16,306 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,`name`,appid,appsecret,email,tel,intro,`status`,use_space AS useSpace,use_space_str AS useSpaceStr,create_time AS createTime FROM oss_developer 
+2019-10-16 15:00:16,308 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:16,313 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 15:00:16,314 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f287f77]
+2019-10-16 15:00:16,316 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f287f77]
+2019-10-16 15:00:16,316 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f287f77]
+2019-10-16 15:00:16,317 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f287f77]
+2019-10-16 15:00:16,330 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,331 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70ae8a98] was not registered for synchronization because synchronization is not active
+2019-10-16 15:00:16,332 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will not be managed by Spring
+2019-10-16 15:00:16,333 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_app_info 
+2019-10-16 15:00:16,335 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:16,340 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 15:00:16,341 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70ae8a98]
+2019-10-16 15:00:16,344 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,345 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62c3349c] was not registered for synchronization because synchronization is not active
+2019-10-16 15:00:16,346 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will not be managed by Spring
+2019-10-16 15:00:16,347 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_developer 
+2019-10-16 15:00:16,349 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:16,356 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 15:00:16,358 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62c3349c]
+2019-10-16 15:00:16,364 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,365 DEBUG (MybatisStdOutImpl.java:49)- SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e9b876a] was not registered for synchronization because synchronization is not active
+2019-10-16 15:00:16,366 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will not be managed by Spring
+2019-10-16 15:00:16,367 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT COUNT(1) FROM oss_material_info 
+2019-10-16 15:00:16,369 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:16,372 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 15:00:16,373 DEBUG (MybatisStdOutImpl.java:49)- Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e9b876a]
+2019-10-16 15:00:16,378 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,379 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c0322f]
+2019-10-16 15:00:16,380 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:16,418 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT sum(len) len from oss_material_info 
+2019-10-16 15:00:16,419 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:16,421 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 1
+2019-10-16 15:00:16,423 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c0322f]
+2019-10-16 15:00:16,423 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c0322f]
+2019-10-16 15:00:16,423 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c0322f]
+2019-10-16 15:00:16,424 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24c0322f]
+2019-10-16 15:00:16,432 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:16,432 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2e7cce]
+2019-10-16 15:00:16,436 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:16,437 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT cur_date, sum( files ) files FROM oss_statistic_day WHERE cur_date IN ( ? , ? , ? , ? , ? , ? , ? , ? ) GROUP BY cur_date ORDER BY cur_date 
+2019-10-16 15:00:16,438 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 2019-10-08(String), 2019-10-09(String), 2019-10-10(String), 2019-10-11(String), 2019-10-12(String), 2019-10-13(String), 2019-10-14(String), 2019-10-15(String)
+2019-10-16 15:00:16,441 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 8
+2019-10-16 15:00:16,442 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2e7cce]
+2019-10-16 15:00:16,443 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2e7cce]
+2019-10-16 15:00:16,444 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2e7cce]
+2019-10-16 15:00:16,444 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2e7cce]
+2019-10-16 15:00:17,473 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:17,475 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbd4462]
+2019-10-16 15:00:17,476 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:17,477 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:17,479 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:17,482 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:17,483 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbd4462]
+2019-10-16 15:00:17,484 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbd4462]
+2019-10-16 15:00:17,484 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbd4462]
+2019-10-16 15:00:17,484 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbd4462]
+2019-10-16 15:00:20,459 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 15:00:20,464 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:20,465 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3a317]
+2019-10-16 15:00:20,466 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:20,467 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:20,467 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:20,469 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:20,470 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3a317]
+2019-10-16 15:00:20,470 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3a317]
+2019-10-16 15:00:20,471 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3a317]
+2019-10-16 15:00:20,471 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d3a317]
+2019-10-16 15:00:20,473 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 15:00:22,295 INFO (OSSApplication.java:58)- dir:/lang1
+2019-10-16 15:00:22,297 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:22,297 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e4e7e7]
+2019-10-16 15:00:22,298 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:22,299 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:22,299 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:22,301 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:22,302 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e4e7e7]
+2019-10-16 15:00:22,302 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e4e7e7]
+2019-10-16 15:00:22,303 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e4e7e7]
+2019-10-16 15:00:22,303 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e4e7e7]
+2019-10-16 15:00:22,306 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 15:00:32,388 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:32,388 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21d924d0]
+2019-10-16 15:00:32,388 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:32,388 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:32,389 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:32,391 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:32,392 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21d924d0]
+2019-10-16 15:00:32,393 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21d924d0]
+2019-10-16 15:00:32,394 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21d924d0]
+2019-10-16 15:00:32,394 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21d924d0]
+2019-10-16 15:00:33,614 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 15:00:33,616 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:33,617 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2c4126]
+2019-10-16 15:00:33,618 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:33,619 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:33,620 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:33,623 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:33,624 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2c4126]
+2019-10-16 15:00:33,625 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2c4126]
+2019-10-16 15:00:33,625 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2c4126]
+2019-10-16 15:00:33,625 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2c4126]
+2019-10-16 15:00:33,629 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 15:00:39,423 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:39,424 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61b73b1e]
+2019-10-16 15:00:39,424 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:39,424 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:39,425 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:39,428 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:39,429 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61b73b1e]
+2019-10-16 15:00:39,429 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61b73b1e]
+2019-10-16 15:00:39,430 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61b73b1e]
+2019-10-16 15:00:39,430 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61b73b1e]
+2019-10-16 15:00:39,433 INFO (MaterialApplication.java:346)- path:F:\home\material
+2019-10-16 15:00:39,439 INFO (MaterialServiceImpl.java:320)- directory:F:\home\material
+2019-10-16 15:00:40,538 INFO (OSSApplication.java:58)- dir:null
+2019-10-16 15:00:40,540 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:40,540 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aa0d19b]
+2019-10-16 15:00:40,541 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:40,542 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:40,544 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:40,546 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:40,548 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aa0d19b]
+2019-10-16 15:00:40,548 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aa0d19b]
+2019-10-16 15:00:40,549 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aa0d19b]
+2019-10-16 15:00:40,549 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4aa0d19b]
+2019-10-16 15:00:40,552 INFO (OSSApplication.java:62)- F:\home\material
+2019-10-16 15:00:40,553 INFO (OSSApplication.java:159)- url:http://192.168.124.1/a7989f0e6f5d46a1afc4db7014d476e7.jpg
+2019-10-16 15:00:43,824 INFO (OSSApplication.java:58)- dir:/langfan2
+2019-10-16 15:00:43,826 DEBUG (MybatisStdOutImpl.java:49)- Creating a new SqlSession
+2019-10-16 15:00:43,826 DEBUG (MybatisStdOutImpl.java:49)- Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5396b864]
+2019-10-16 15:00:43,827 DEBUG (MybatisStdOutImpl.java:49)- JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@765ffb14] will be managed by Spring
+2019-10-16 15:00:43,827 DEBUG (MybatisStdOutImpl.java:49)- ==>  Preparing: SELECT id AS id,root,invoking_root AS invokingRoot,nginx_log_path AS nginxLogPath,create_time AS createTime,modified_time AS modifiedTime FROM oss_information 
+2019-10-16 15:00:43,828 DEBUG (MybatisStdOutImpl.java:49)- ==> Parameters: 
+2019-10-16 15:00:43,831 DEBUG (MybatisStdOutImpl.java:49)- <==      Total: 0
+2019-10-16 15:00:43,831 DEBUG (MybatisStdOutImpl.java:49)- Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5396b864]
+2019-10-16 15:00:43,831 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5396b864]
+2019-10-16 15:00:43,831 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5396b864]
+2019-10-16 15:00:43,831 DEBUG (MybatisStdOutImpl.java:49)- Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5396b864]
+2019-10-16 15:00:43,836 INFO (OSSApplication.java:62)- F:\home\material
